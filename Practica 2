@@ -2,8 +2,9 @@
 <html lang="es" dir="ltr">
 <head>
     <meta charset="UTF-8">
-    <title>Practica 2 </title>
-    <link rel="shortcut icon" href="Corner_Ornament.png">
+    <meta name="description" content="Esta es la practica 2 del laboratorio de programacion web.">
+    <title>PRACTICA #2</title>
+    <link rel="shortcut icon" href="icon.png">
     <style>
         p{
             font-family: Arial, sans-serif;
@@ -12,12 +13,10 @@
             text-justify: auto;
         }
 
-        body{
-            background-color: #fafafa;
-        }
+        
 
         ul{
-            margin-left: 3%;
+            margin-left: 4%;
             margin-right: 5%;
         }
 
@@ -27,9 +26,9 @@
     </style>
 </head>
 <body>
-    <body background="https://s1.1zoom.me/b5050/593/Synthwave_Pyramid_Night_562799_1366x768.jpg"></body>
+    <body background="https://s1.1zoom.me/b5050/593/Synthwave_Pyramid_Night_562799_1366x768.jpg">
     <div>
-        <h2><a href="index.html" style='text-decoration:none;color: white'>Home</a></h2>
+        <h2><a title="Pagina principal" href="index.html" style='text-decoration:none;color:whitesmoke'>Regresar</a></h2>
     </div>
     <section>
         <center><h1 style="font-family: Arial;color: white; font-size: 2.3em" >Practica 2</h1></center>
