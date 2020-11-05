@@ -187,6 +187,6 @@ function naranja()
 }
 function borrador()
 {
-  colorcito = "white";
+  colorcito = "#BB8FCE";
   grosor = grosor * 3;
 }
