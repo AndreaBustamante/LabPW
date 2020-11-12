@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(202, 103, 233);
+    color: #111;
+    margin: 1rem;
+  }
+  h2 {
+      font-size: 3.5rem;
+      text-align: center;
+      color: rgb(255, 251, 6);
+  }
+  p{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.5rem;
+      text-align: center;
+      margin-top: 3rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+  }
+  img {
+      height: 150px;
+      width: 150px;
+  }
+  .score {
+      font-family: monospace;
+      text-align: left;
+      font-weight: bold;
+      margin: 1rem;
+      position: relative;
+      transition: opacity 0.2s;
+  }
+  #play-again-btn{
+      position: bottom;
+      top: 10px;
+      left: 50%;
+      margin-left: 15px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+      background-color: rgb(52, 211, 47);
+      border: 0px double #fff; 
+      border-radius: 14px;
+      padding: 8px 10px;  
+      outline: none;
+      letter-spacing: .05em;
+      cursor: pointer;
+      transition: opacity 0.5s, transform 0.5s, background-color 0.2s;
+    }
+    #play-again-btn:hover {
+      background-color: rgb(34, 34, 34);
+    }
+  
+  .draggable-elements {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+  }
+  .draggable {
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    margin: 0rem 0.5rem;
+    cursor: move;
+    transition: opacity 0.2s;
+  }
+  .draggable:hover {
+    opacity: 0.5;
+  }
+  
+  .droppable-elements{
+      text-align: center;  
+  }
+  
+  .droppable {
+      height: 8rem;
+      width: 10rem;
+      margin: 1rem;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: center;
+      text-align: center;
+      font-size: 4rem;
+      font-weight: bold;
+      background-color: rgba(255, 255, 255, 0);
+      border: 3px dashed rgba(17, 17, 17, 0);
+      transition: border-width 0.2s, transform 0.2s, background-color 0.4s;}
+  .droppable span {
+    font-size: 1.25rem;
+    pointer-events: none; 
+  }
+  
+  /* Drag and Drop Related Styling */
+  
+  .droppable.droppable-hover {
+    background-color: rgb(255, 251, 6);
+    border-width: 10px;
+    transform: scale(1.1);
+  }
+  .droppable.dropped {
+    border-style: solid;
+    color: rgba(245, 13, 13, 0);
+  }
+  .droppable.dropped span {
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+  }
+  .droppable.dropped i {
+    pointer-events: none;
+  }
+  .draggable.dragged {
+    user-select: none;
+    opacity: 0.1;
+    cursor: default;
+  }
+  .draggable.dragged:hover {
+    opacity: 0.1;
+  }
+  
+  @media (max-width: 600px) {
+    html { font-size: 14px; }
+    .draggable-elements { margin: 1.5rem; }
+  }

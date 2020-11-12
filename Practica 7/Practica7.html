@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Práctica #7</title>
+<link rel="shortcut icon" href="../icon.png">
+<link rel="stylesheet" href="CSS/estilo7.css">
+<script src="https://kit.fontawesome.com/9b400d87ec.js" crossorigin="anonymous"></script>
+<script src="main.js" defer></script>
+</head>
+<body>
+<h2>¿De que pais es la comida?</h2>
+<section class="instructions">
+    <p>Arrastra el platillo al nombre del pais al que pertenece.</p>
+</section>
+<section class="draggable-elements">
+    <img class="fas fa-volleyball-ball draggable" id="volleyball-ball" src="1.png" draggable="true">
+    <img class="fas fa-futbol draggable" id="futbol" src="2.png" draggable="true">
+    <img class="fas fa-bowling-ball draggable" id="bowling-ball" src="3.png" draggable="true">
+    <img class="fas fa-basketball-ball draggable" id="basketball-ball" src="4.png" draggable="true">
+    <img class="fas football-ball draggable" id="football-ball" src="6.png" draggable="true">
+</section>
+<section class="droppable-elements">
+    <div class="droppable" data-draggable-id="basketball-ball"><span>EUA</span></div>
+    <div class="droppable" data-draggable-id="futbol"><span>Italia</span></div>
+    <div class="droppable" data-draggable-id="volleyball-ball"><span>Mexico</span></div>
+    <div class="droppable" data-draggable-id="football-ball"><span>Alemania</span></div>
+    <div class="droppable" data-draggable-id="bowling-ball"><span>China</span></div>
+</section>
+<section class="score">
+    <h1>Puntaje:<span id="correct">0</span></h1>
+    <h1>Intentos:<span id="attempt">0</span></h1>
+</section>
+<section class="play-again">
+    <input type="button" value="Reiniciar juego" id="play-again-btn" onClick="document.location.reload(true)">
+</section>
+</body>
+</html>
