@@ -1,0 +1,133 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body{ 
+font-family:'open sans';
+width:100%;
+height: 600px;
+background: #BB8FCE;  
+background-size: cover;
+background-attachment: fixed;
+position: relative;
+margin: auto;
+}
+.practicas-form{
+	background: #fff;
+	width: 10%;
+    position: center;
+    margin: auto;
+	padding: 10px;
+	text-align: center;
+	flex-direction: column;
+}
+
+.header1{
+	background:hsla(290, 84%, 20%, 0.644);
+}
+
+ .titulo{
+    font-size: 30px;
+    color: #ffff;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.back{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#return{
+    text-decoration: none;
+
+}
+
+
+.contenido-textos{
+	background: linear-gradient(to right, #BB8FCE(165, 43%, 70%, 0.644), #BB8FCE(165, 97%, 48%, 0.644));
+	width: 95%;
+    position: center;
+    margin: auto;
+	padding: 5px;
+	text-align: center;
+	
+}
+
+h1{
+	font-size: 20px;
+	text-align:center;
+	color: white;
+
+}
+
+h2{
+	font-size: 15px;
+	text-align: center;
+	position: center;
+	margin-left: 30px;
+	color:rgb(2, 31, 44);
+}
+
+a{
+	font-size: 25px;
+	color: #fff;
+	text-align: center;
+	position: center;
+	text-decoration: none;
+}
+
+#Recuadros{
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.Recuadros img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.Recuadros{
+    width: 340px;
+    margin: 30px 30px 30px 30px;
+    background: rgb(255, 255, 255);
+    padding: 25px;
+    text-align: center;
+    box-shadow: 1px 1px 10px 0px #ffffffc9;
+}
+
+.Datos{
+    line-height: 30px;
+    color: #000000;
+}
+
+.Mat{
+    color: rgb(115, 6, 179);
+}
+
+
+
+@media screen and (max-width:300px){
+    body{
+		background-position: center;
+		}
+
+a{
+	font-size: 14px;
+	margin-right: 0px;
+	margin-left: 0px;
+	text-align: center;
+	flex-direction: column;
+}
+	.Recuadros{
+        width: 200px;
+    }
+}
